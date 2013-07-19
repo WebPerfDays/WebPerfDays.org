@@ -1,0 +1,31 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  WebPerf Days : Aaron Kulick
+  Site:  http://www.webperfdays.org
+  Twitter:  @WebPerfDays
+  Location:  Silicon Valley, California - United States of America	
+  
+/* LOGO */
+  Uses "universal" symbols to express the following:
+
+    'site' + 'analytics/data' + 'fast' = 'money (in the bank)'
+
+  The www.webperfdays.org logo is constructed using components from
+    The Noun Project (http://www.thenounproject.com).
+
+  Attribution
+      - 'layout' - Anna Weiss, from The Noun Project
+      - 'globe' - The Noun Project
+      - 'arrow' - Creologica, from The Noun Project
+      - 'mouse' - Camila Bertoco, from The Noun Project
+      - 'line graph' - Scott Lewis, from The Noun Project
+      - 'deer' - Public Domain, from The Noun Project
+      - 'money' - CC0, from The Noun Project
+      - 'piggy bank' - Thibault Geffroy, from The Noun Project
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
