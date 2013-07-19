@@ -17,3 +17,6 @@ clean:
 	rm register.html
 	rm schedule.html
 	rm sponsors.html
+
+upload:
+	sftp -r events/${CURRENT_SLUG} webperfdays@wwww.webperfdays.org:./www/events/
