@@ -11,12 +11,12 @@ links:
 	ln -s events/${CURRENT_SLUG}/sponsors.html
 
 clean:
-	rm format.html
-	rm location.html
-	rm proposals.html
-	rm register.html
-	rm schedule.html
-	rm sponsors.html
+	rm -f format.html
+	rm -f location.html
+	rm -f proposals.html
+	rm -f register.html
+	rm -f schedule.html
+	rm -f sponsors.html
 
 upload:
 	sftp -r events/${CURRENT_SLUG} webperfdays@wwww.webperfdays.org:./www/events/
