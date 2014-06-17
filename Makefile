@@ -1,4 +1,4 @@
-CURRENT_SLUG=2013-newyork
+CURRENT_SLUG=2014-siliconvalley
 
 all: clean links
 
