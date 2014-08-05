@@ -25,9 +25,7 @@
 		<link rel="stylesheet" href="/css/bootstrap-responsive.css">
 		<link rel="stylesheet" href="/css/style.css">
 
-		<script src="/js/libs/modernizr-2.5.3.min.js"></script>
 		<script type="text/javascript">
-
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-30369389-1']);
 			_gaq.push(['_trackPageview']);
@@ -45,16 +43,16 @@
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<a id="hamburger" class="btn btn-navbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
 					<a class="brand" href="/index.html">WebPerfDays.org</a>
-					<div class="nav-collapse">
+					<div class="nav-collapse" id="globalnav">
 						<ul class="nav">
 							<li class="active"><a href="#">New York 2014</a></li>
-							<li><a href="http://www.meetup.com/Web-Performance-NY/events/129664752/" target="_blank">Register</a></li>
+							<li><a href="http://www.eventbrite.com/e/webperfdays-ny-registration-599969525" target="_blank">Register</a></li>
 							<li><a href="./schedule.html">Schedule</a></li>
 							<li><a href="./format.html">Format</a></li>
 							<li><a href="./location.html">Location</a></li>
@@ -65,7 +63,23 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			/* Hamburger JS */
+			var hamburger = document.getElementById('hamburger');
+			hamburger.addEventListener('click', function() {
+				var nav = document.getElementById("globalnav");
 
+				console.log(nav.style.height);
+
+				if (nav.style.height == 'auto') {
+					nav.style.height = 0;
+				} else {
+					nav.style.height = 'auto';
+				}
+
+				return true;
+			}, false);
+		</script>
 		<div class="container">
 
 			<div align=center>
@@ -215,15 +229,6 @@
 				<p>&copy; WebPerfDays.org 2014</p>
 			</footer>
 
-		</div> <!-- /container -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-		<script src="/js/libs/bootstrap/transition.js"></script>
-		<script src="/js/libs/bootstrap/collapse.js"></script>
-
-		<script src="/js/plugins.js"></script>
-		<script src="/js/script.js"></script>
-
+		</div>
 	</body>
 </html>

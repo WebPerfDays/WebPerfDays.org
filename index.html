@@ -25,9 +25,7 @@
 		<link rel="stylesheet" href="/css/bootstrap-responsive.css">
 		<link rel="stylesheet" href="/css/style.css">
 
-		<script src="/js/libs/modernizr-2.5.3.min.js"></script>
 		<script type="text/javascript">
-
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-30369389-1']);
 			_gaq.push(['_trackPageview']);
@@ -37,6 +35,7 @@
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+
 		</script>
 	</head>
 	<body>
@@ -45,15 +44,15 @@
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<a id="hamburger" class="btn btn-navbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="#">WebPerfDays.org</a>
-					<div class="nav-collapse">
+					<a class="brand" href="/index.html">WebPerfDays.org</a>
+					<div class="nav-collapse" id="globalnav">
 						<ul class="nav">
-							<li class="active">Home</li>
+							<li><a class="active" href="/">Home</a></li>
 							<li><a href="./events/2014-newyork/index.html">New York 2014</a></li>
 							<li><a href="./events/2014-amsterdam/index.html">Amsterdam 2014</a></li>
 							<li><a href="./events/2014-barcelona/index.html">Barcelona 2014</a></li>
@@ -64,6 +63,23 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			/* Hamburger JS */
+			var hamburger = document.getElementById('hamburger');
+			hamburger.addEventListener('click', function() {
+				var nav = document.getElementById("globalnav");
+
+				console.log(nav.style.height);
+
+				if (nav.style.height == 'auto') {
+					nav.style.height = 0;
+				} else {
+					nav.style.height = 'auto';
+				}
+
+				return true;
+			}, false);
+		</script>
 
 		<div class="container">
 
@@ -130,14 +146,5 @@
 			</footer>
 
 		</div> <!-- /container -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-		<script src="/js/libs/bootstrap/transition.js"></script>
-		<script src="/js/libs/bootstrap/collapse.js"></script>
-
-		<script src="/js/plugins.js"></script>
-		<script src="/js/script.js"></script>
-
 	</body>
 </html>
