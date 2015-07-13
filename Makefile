@@ -1,4 +1,4 @@
-CURRENT_SLUG=2014-siliconvalley
+CURRENT_SLUG=2015-newyork
 
 all: clean links
 
@@ -19,4 +19,4 @@ clean:
 	rm -f sponsors.html
 
 upload:
-	sftp -r events/${CURRENT_SLUG} webperfdays@wwww.webperfdays.org:./www/events/
+	lftp -vvv -f lftp.batch
