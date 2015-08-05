@@ -5,12 +5,12 @@ events/XXXX-template/about.html
 events/2014-barcelona/about.html
 events/2014-amsterdam/about.html
 events/2013-siliconvalley/about.html
-proposals.html
-location.html
-register.html
-schedule.html
-format.html
-sponsors.html
+/proposals.html
+/location.html
+/register.html
+/schedule.html
+/format.html
+/sponsors.html
 .idea/
 
 /nbproject/private/
