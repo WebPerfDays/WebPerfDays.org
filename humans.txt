@@ -3,11 +3,11 @@
 
 
 /* TEAM */
-  WebPerf Days : Aaron Kulick
+  WebPerf Days : Aaron Kulick, Jeroen Tjepkema
   Site:  http://www.webperfdays.org
   Twitter:  @WebPerfDays
-  Location:  Silicon Valley, California - United States of America	
-  
+  Location:  Silicon Valley, California - United States of America
+
 /* LOGO */
   Uses "universal" symbols to express the following:
 
